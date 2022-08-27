@@ -12,10 +12,13 @@ Users should be able to:
 
 ### Screenshot
 - Mobile
+
 ![mobile](/final%20screenshots/Mobile-final.png)
 - Tablet
+
 ![tablet](/final%20screenshots/Tablet-final.png)
 - Desktop
+
 ![desktop](/final%20screenshots/Desktop-final.png)
 
 ### Links
