@@ -1,0 +1,210 @@
+:root {
+  /* ==== text colors ==== */
+  --text_blue: hsl(238, 29%, 16%);
+  --text_red: hsl(240, 73%, 65%);
+  --text_gray: hsl(237, 12%, 33%);
+  --text_darkgray: hsl(240, 6%, 50%);
+  /* ==== background ==== */
+  --soft-violiet: hsl(273, 75%, 66%);
+  --soft-blue: hsl(240, 73%, 65%);
+  /* ==== component colors ===== */
+  --dividers_gray: hsl(240, 5%, 91%);
+
+  /* ==== typography ==== */
+  --ff: "Kumbh Sans", sans-serif;
+  --fw-bold: 700;
+  --fw-regular: 400;
+  --fs-body: 0.75rem; /* 12px */
+}
+
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* border: 1px solid red */
+}
+
+/* ==== layout ==== */
+html {
+  background-image: linear-gradient(var(--soft-violiet) 30%, var(--soft-blue));
+  height: 100vh;
+  width: 100vw;
+}
+body {
+  height: 100%;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  font-family: var(--ff);
+  padding-top: 60px;
+}
+.card {
+  background-color: white;
+  height: 535px;
+  border-radius: 20px;
+  width: clamp(240px, 20.3rem, 90%);
+  display: flex;
+  flex-direction: column;
+  padding-inline: 26px;
+  box-shadow: 0px 50px 30px -15px rgba(0, 0, 0, 0.25);
+}
+
+/* ==== INNER LAYOUT ==== */
+.desktop_image {
+  display: none;
+}
+
+.card__illustration {
+  height: 120px;
+  text-align: center;
+  /* border: 1px red solid; */
+  padding-inline: 7%;
+}
+.card__illustration img {
+  width: 100%;
+}
+.card__illustration img:first-of-type {
+  transform: translateY(-60%);
+}
+.card__illustration #mobile_shadow {
+  transform: translateY(-180%);
+}
+
+.faq_list {
+  font-size: 9px;
+  overflow: scroll;
+  scrollbar-width: none;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 20px;
+}
+
+details:nth-child(1n + 4) {
+  /* padding: 5px 0 0 0px; */
+}
+/* ==== FAQ section ==== */
+
+nav {
+  font-size: 20px;
+  text-align: center;
+  padding: 12px 0 18px;
+}
+summary {
+  cursor: pointer;
+  border-bottom: 1px solid var(--dividers_gray);
+  padding: 0.8rem 0 1.2rem;
+  list-style: none;
+  color: var(--text_gray);
+}
+details[open] summary h2 {
+  font-weight: bold;
+  color: black;
+}
+details[open] summary h2 img {
+  transform: rotate(180deg);
+}
+details[open] summary {
+  border: none;
+  padding-bottom: 0.6rem;
+}
+
+p {
+  padding-bottom: 1rem;
+  padding-right: 10px;
+  border-bottom: 1px solid var(--dividers_gray);
+  line-height: 1.2rem;
+  font-size: 12px;
+  color: var(--text_darkgray);
+}
+
+h2 {
+  font-weight: var(--fw-regular);
+  font-size: 14px;
+}
+.arrow {
+  vertical-align: bottom;
+  padding-top: 5px;
+  float: right;
+}
+
+/* ==== MEDIA QUERIES ==== */
+@media screen and (min-width: 768px) {
+  .card {
+    width: 450px;
+    padding-inline: 50px;
+  }
+  .card__illustration {
+    padding-inline: 10%;
+  }
+}
+
+@media screen and (min-width: 1100px) {
+  body {
+    flex-direction: row;
+    padding: 0;
+    padding-left: 35px;
+  }
+  .card {
+    max-width: 920px;
+    height: 510px;
+    flex-direction: row;
+    flex: 1;
+    padding: 0;
+  }
+  .card__illustration .mobile_image {
+    display: none;
+  }
+  .card__illustration {
+    height: 100%;
+    width: 53%;
+    padding: 0;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    /* border: 1px solid red */
+  }
+  .desktop_image {
+    display: block;
+  }
+  #desktop_woman {
+    transform: translate(-17%, 18%);
+    position: absolute;
+    z-index: 1;
+  }
+  #desktop_shadow {
+    position: absolute;
+    width: 1000px;
+    transform: translate(-60%, -32.5%);
+  }
+  #desktop_box {
+    position: absolute;
+    display: inline;
+    z-index: 2;
+    transform: translate(-49%, 111%);
+    filter: drop-shadow(0px 20px 15px rgba(0, 0, 0, 0.2));
+  }
+  .faq_list {
+    width: 50%;
+    /* border: 1px solid red; */
+    padding: 0 6rem 0 12px;
+    margin-top: 130px;
+    margin-bottom: 30px;
+    margin-left: -80px;
+    height: auto;
+  }
+  nav {
+    position: relative;
+    /* right: 600px; */
+    transform: translate(-5px, 11%);
+  }
+  summary {
+    padding-right: 10px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+  }
+}

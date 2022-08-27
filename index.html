@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+
+    <title>Frontend Mentor | FAQ Accordion Card</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main class="card">
+      <div class="box_outside">
+        <img
+          src="images/illustration-box-desktop.svg"
+          id="desktop_box"
+          alt="box desktop"
+          class="desktop_image"
+        />
+      </div>
+      <div class="card__illustration">
+        <img
+          class="mobile_image"
+          src="images/illustration-woman-online-mobile.svg"
+          alt="woman illustration"
+        />
+        <img
+          class="mobile_image"
+          id="mobile_shadow"
+          src="images/bg-pattern-mobile.svg"
+          alt="shadow mobile"
+        />
+        <img
+          src="images/illustration-woman-online-desktop.svg"
+          id="desktop_woman"
+          alt="woman desktop"
+          class="desktop_image"
+        />
+        <img
+          src="images/bg-pattern-desktop.svg"
+          id="desktop_shadow"
+          alt="box desktop"
+          class="desktop_image"
+        />
+      </div>
+      <nav><h1>FAQ</h1></nav>
+      <section class="faq_list">
+        <details>
+          <summary>
+            <h2 class="bold">
+              How many team members can I invite?
+              <img
+                class="arrow"
+                src="images/icon-arrow-down.svg"
+                alt="icon arrow"
+              />
+            </h2>
+          </summary>
+          <p>
+            You can invite up to 2 additional users on the Free plan. There is
+            no limit on team members for the Premium plan.
+          </p>
+        </details>
+        <details>
+          <summary>
+            <h2 class="bold">
+              What is the maximum file upload size?<img
+                class="arrow"
+                src="images/icon-arrow-down.svg"
+                alt="icon arrow"
+              />
+            </h2>
+          </summary>
+          <p>
+            No more than 2GB. All files in your account must fit your allotted
+            storage space.
+          </p>
+        </details>
+        <details>
+          <summary>
+            <h2 class="bold">
+              How do I reset my password?<img
+                class="arrow"
+                src="images/icon-arrow-down.svg"
+                alt="icon arrow"
+              />
+            </h2>
+          </summary>
+          <p>
+            Click “Forgot password” from the login page or “Change password”
+            from your profile page. A reset link will be emailed to you.
+          </p>
+        </details>
+        <details>
+          <summary>
+            <h2 class="bold">
+              Can I cancel my subscription?<img
+                class="arrow"
+                src="images/icon-arrow-down.svg"
+                alt="icon arrow"
+              />
+            </h2>
+          </summary>
+          <p>
+            Yes! Send us a message and we’ll process your request no questions
+            asked.
+          </p>
+        </details>
+        <details>
+          <summary type="button" role="button">
+            <h2 class="bold">
+              Do you provide additional support?<img
+                class="arrow"
+                src="images/icon-arrow-down.svg"
+                alt="icon arrow"
+              />
+            </h2>
+          </summary>
+          <p>
+            Chat and email support is available 24/7. Phone lines are open
+            during normal business hours.
+          </p>
+        </details>
+      </section>
+    </main>
+    <script></script>
+  </body>
+</html>
