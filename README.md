@@ -11,9 +11,11 @@ Users should be able to:
 - Hide/Show the answer to a question when the question is clicked
 
 ### Screenshot
-
-![mobile](/final%20screenshots/Mobile-final.png);
-![tablet](/final%20screenshots/Tablet-final.png);
+- Mobile
+![mobile](/final%20screenshots/Mobile-final.png)
+- Tablet
+![tablet](/final%20screenshots/Tablet-final.png)
+- Desktop
 ![desktop](/final%20screenshots/Desktop-final.png)
 
 ### Links
